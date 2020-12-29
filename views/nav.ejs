@@ -11,28 +11,42 @@
     
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" style="font-size: 25px;font-weight: bold;">DrBot</a>
+      <a class="navbar-brand" href="#"><img id="logo" src="../public/images/DrBot_logo.png"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link active" style="color: #28328c;border-bottom: 5px solid #14bef0;" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="/covid">COVID-19 </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li> -->
+            <a class="nav-link" href="/diabetes">Consult</a>
+          </li>
+          <li class="nav-item" id="pr">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
         </ul>
-        <form class="d-flex">
-          <button class="btn btn-outline-primary" type="submit">Login/Signup</button>
-        </form>
+        <% if(loginUser){%>
+          <li style="list-style: none;" class="nav-item">
+            <a class="navbar-brand" href="#"><img src="https://img.icons8.com/ios-filled/30/000000/user-male-circle.png"/> <%= loginUser %>
+            <a href="/logout"> <p>
+            Logout
+            </p></a> </a>
+          </li>
+          <form  class="d-flex">
+            <button style="display: none;" class="btn btn-outline-primary" type="submit">Login/Signup</button>
+          </form>
+        <%} %>
+        <% if(loginUser == null){%>
+            <a href="/login">
+            <button class="btn btn-outline-primary" type="submit">Login/Signup</button>
+            </a>
+          <%} %>
+
       </div>
     </div>
   </nav>

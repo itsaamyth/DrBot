@@ -99,6 +99,21 @@ a {
   font-weight:700;
   font-family: 'Gilroy', sans-serif;
 }
+#val11{
+  font-size: 28px;
+  font-weight:700;
+  font-family: 'Gilroy', sans-serif;
+}
+#val12{
+  font-size: 28px;
+  font-weight:700;
+  font-family: 'Gilroy', sans-serif;
+}
+#val13{
+  font-size: 28px;
+  font-weight:700;
+  font-family: 'Gilroy', sans-serif;
+}
 #newVal{
   font-size:15px;
   font-weight:900
@@ -122,4 +137,88 @@ a {
 }
 #article{
   padding: 50px;
+}
+#how{
+  margin-left: 20px;
+}
+#login{
+  margin: 0 auto;float: none;margin-top: 20px;
+}
+@media screen and (max-width: 768px){
+  #poster{
+  display: inline-block;
+  height:100%;
+  padding: 0px;
+}
+  #banner{
+    height:100%;
+    width: 100%;
+    margin-top:20px;
+  }
+  #stats{
+    width: 50%;
+    margin:0 auto;
+    margin-top:20px
+  }
+    #stats1{
+      height:120px;
+  }
+  #val11{
+    font-size:32px;
+    margin-top:20px
+  }
+  #val12{
+    font-size:32px;
+    margin-top:20px
+  }
+  #val13{
+    font-size:32px;
+    margin-top:20px
+  }
+    #poster3{
+        display: inline-block;
+        padding:0px;
+        box-shadow:none;
+      }
+
+      #banner3{
+        height: 100%;
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 0px;
+      }
+      #hr{
+        width:100%
+      }
+      #article{
+        padding:0px
+      }
+      #art{
+        height:100%;
+        width:100%;
+        margin-bottom:0px;
+        margin-top:0px
+      }
+      #art1{
+        height:fit-content;
+        width:100%;       
+      }
+      #art2{
+        height:fit-content;
+        width:100%
+      }
+      #ft{
+       margin-top: 30px;
+      }
+      #how{
+        margin-left:0px;
+      }
+      #dimg{
+        display:block;
+        margin: 0 auto
+      }
+      #statsrow{
+        display:block
+      }
+
 }

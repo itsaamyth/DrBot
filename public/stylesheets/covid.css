@@ -44,7 +44,7 @@ header{
     align-items: center;
     justify-content: space-between;
 
-    max-width: 1200px;
+    /* max-width: 1200px; */
     width: 100%;
     height: 60px;
 
@@ -77,9 +77,9 @@ nav ul{
 nav ul li{
     list-style: none;
 }
-nav ul li:last-child{
+/* nav ul li:last-child{
     padding-right: 20px;
-}
+} */
 nav ul li a {
     text-decoration: none;
     color: #6a149b;
@@ -245,7 +245,7 @@ nav ul li a {
 /* ---------------------------------------------- */
 /*                    FOOTER                      */
 /* ---------------------------------------------- */
-footer{
+/* footer{
     max-width: 1200px;
     height: 60px;
 
@@ -268,7 +268,7 @@ footer{
 
 .copyright p{
     color: #FFF;
-}
+} */
 /* ---------------------------------------------- */
 /*             SCREEN WIDTH < 600px               */
 /* ---------------------------------------------- */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel='stylesheet' href='../public/stylesheets/style.css'/>
+    <link rel='stylesheet' href='../public/stylesheets/nav.css'/>
+    <link rel="stylesheet" href="../public/stylesheets/covid.css" />
+</head>
+<body>
+    <%- include('nav') %>
+    <br><br><br>
+    <section>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                   <a href="/login"><h4 style="text-align: right;font-weight: bold;color:  #14bef0;">Login</h4></a>
+              </div>
+              <div class="col-md-6">
+                <a style="color: inherit;" href="/register"><h4 style="font-weight: bold">Register</h4></a>
+           </div>
+            </div>
+            <hr style="height: 0.5px;margin-top: 2px;background-color: gainsboro;">
+        </div>
+    </section>
+    <br>
+    <section>
+        <div class="container">
+           <div class="row">
+            <div class="col-md-5">
+              <img src="../public/images/login.png">
+            </div>
+            <div class="col-md-5" id="login">   
+            <div class="card">
+                <br>
+               <center><h3>Welcome to <span style="font-weight: 700">DrBot</span> </h3></center><br>
+                <!-- <h5 style="background-color: #31708f;color: white;" class="card-header">Please Login</h5> -->
+                  <div class="card-body" >
+                          <form action="/login" id="EmployeeForm" method="post"  role="form" >
+                            <div class="form-group">
+  
+                              
+                                  <div>
+                                    <h6 style="margin-top: -20px;">Please Login</h6>
+                                  </div>
+                                  <!-- <label for="Username" >User Name</label> -->
+                                  <div >
+                                      <input type="text" class="form-control" style="margin-bottom: 15px;" name="uname"  placeholder="Enter Your Username" required>
+                                  </div>
+                            
+                                  <!-- <label for="password" >Password</label> -->
+                                  <div >
+                                      <input type="password" class="form-control" name="password" placeholder="Enter your Password" required>
+                                  </div>
+                            </div>
+                                  <div class="form-group">
+                                    <!-- Button -->                                        
+                                    <div class="vertical-center" >
+                                    <input type="submit" style="background-color: #6610f2;border: none;width: 100%;margin: 0;float: none;margin-top: 2px;" name="submit" value="Login" class="btn btn-primary">   
+                                    </div>
+                                </div>
+                              <!-- <p style="margin-top: 10px;">Don't you have an account please <a href="/signup">Create New Account</a> </p> -->
+                          </form>
+                          </div>
+                  </div>
+                </div>  
+           </div>
+        </div>
+    </section>
+<br><br><br>
+    <footer >
+        <section>
+          <div id="ft" class="container-fluid">
+            <div class="row" style="background-color: black;">
+             <center><a class="navbar-brand" href="#"><img id="logo" src="../public/images/DrBot_logo.png"></a></center> <br>
+             <center><p style="color: white;">&copy; <span style="font-weight: bold;"> DrBot </span> | created and developed by Team MapBy.</p></center>
+          </div>
+        </div>
+      </section>
+      </footer>
+      
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      
+</body>
+</html>

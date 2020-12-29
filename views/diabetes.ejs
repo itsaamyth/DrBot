@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel='stylesheet' href='../public/stylesheets/style.css'/>
+    <link rel='stylesheet' href='../public/stylesheets/nav.css'/>
+    <link rel="stylesheet" href="../public/stylesheets/covid.css" />
+  </head>
+  <body>
+    <%- include('nav') %>
+  <section>
+      <div class="container-fluid">
+        <div  class="row">
+       <div id="poster">
+         <div class="col-md-7 col-sm-7 col-xs-7" >
+         <h3 id="hello">DrBot Consult</h3>
+         <hr id="hr">
+         <h5>DrBot Knows About</h5>
+         <a href="https://t.me/DoctorDoctorBotBot"><button type="button" class="btn btn-primary">Connect Now</button></a>
+         </div>
+         <div class="col-md-5 col-sm-5 col-xs-5">
+          <img id="banner" src="../public/images/415.png">
+         </div>
+       </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+    <div class="container" id="main">
+        <h2 style="font-weight: 700;">Sugar Diabetes</h2>
+        <br>
+
+        <!----------------------------------------------Disease Content ---------------------------------------------->
+        <div class="container" id="main2">
+
+            <h5>The Disease</h5>
+            <p>Diabetes mellitus refers to a group of diseases that affect how your body uses blood sugar (glucose). Glucose is vital to your health because it's an important source of energy for the cells that make up your muscles and tissues. It's also your brain's main source of fuel.<br><br>
+
+                The underlying cause of diabetes varies by type. But, no matter what type of diabetes you have, it can lead to excess sugar in your blood. Too much sugar in your blood can lead to serious health problems.<br><br>
+                
+                Chronic diabetes conditions include type 1 diabetes and type 2 diabetes. Potentially reversible diabetes conditions include prediabetes and gestational diabetes. Prediabetes occurs when your blood sugar levels are higher than normal, but not high enough to be classified as diabetes. And prediabetes is often the precursor of diabetes unless appropriate measures are taken to prevent progression. Gestational diabetes occurs during pregnancy but may resolve after the baby is delivered.</p>
+
+            <h5>Symtoms</h5>
+            <div class="container my-3 pl-5" id="list1" >
+        
+                    <ul class="list-group">
+                        <li>Increased thirst</li>
+                        <li>Frequent urination</li>
+                        <li>Extreme hunger</li>
+                        <li>Unexplained weight loss</li>
+                        <li>Presence of ketones in the urine (ketones are a byproduct of the breakdown of muscle and fat that happens when there's not enough available insulin)</li>
+                        <li>Fatigue</li>
+                        <li>Irritability</li>              
+                        <li>Blurred vision</li>              
+                        <li>Slow-healing sores</li>
+                        <li>Frequent infections, such as gums or skin infections and vaginal infections</li>
+                    </ul>                   
+            </div>
+            
+            <h5>Precautions</h5>
+            <div class="container my-3 pl-5" id="list1" >
+        
+                    <ul class="list-group">
+                        <li><b>Eat healthy foods.</b> Choose foods lower in fat and calories and higher in fiber. Focus on fruits, vegetables and whole grains. Strive for variety to prevent boredom.</li>
+                        <li><b>Get more physical activity.</b> Aim for about 30 minutes of moderate aerobic activity on most days of the week, or at least 150 minutes of moderate aerobic activity a week.</li>
+                        <li><b>Lose excess pounds.</b> If you're overweight, losing even 7% of your body weight — for example, 14 pounds (6.4 kilograms) if you weigh 200 pounds (90.7 kilograms) — can reduce the risk of diabetes.</li>            
+                    </ul>                   
+            </div> 
+            <!-------------------------------------------- Image Gallery --------------------------------------------->
+            <!-- <h5>Image Gallery</h5>
+            
+            <div class="row my-5">
+                <div class="col-sm-6" >
+                    <img src="diabetes-flat-composition-medical-with-patient-symptoms-complications-blood-sugar-meter-treatments-medication_1284-28998.jpg" width="200" height="auto">
+                </div>
+                <div class="col-sm-6" >
+                    <img src="Diabetes-Symptoms-complications-and-preventer-chart.jpg" width="300" height="auto">
+                </div>
+                <div class="col-sm-6" >
+                    <img src="Gestational-Diabetes-During-Pregnancy-722x406.jpg" width="350" height="auto">
+                </div>
+                <div class="col-sm-6" >
+                    <img src="images.jpg" width="auto" height="200">
+                </div>
+              </div> -->
+
+
+        </div>   
+    </div>
+
+    <footer >
+        <section>
+          <div id="ft" class="container-fluid">
+            <div class="row" style="background-color: black;">
+             <center><a class="navbar-brand" href="#"><img id="logo" src="../public/images/DrBot_logo.png"></a></center> <br>
+             <center><p style="color: white;">&copy; <span style="font-weight: bold;"> DrBot </span> | created and developed by Team MapBy.</p></center>
+          </div>
+        </div>
+      </section>
+      </footer>
+      
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      
+</body>
+</html>
