@@ -1,0 +1,135 @@
+<!-- CODE EXPLAINED TUTORIALS -->
+<!-- youtube.com/CodeExplained -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/stylesheets/covid.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='../public/stylesheets/style.css'/>
+    <link rel='stylesheet' href='../public/stylesheets/nav.css'/>
+    <title>DrBot | COVID-19 STATS</title>
+  </head>
+  <body>
+    <!-- <header>
+      <div class="logo">
+        <img src="../public/images/logo.png" alt="" />
+        <p>COVID-19<br />STATS</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+      </nav>
+    </header> -->
+    <%- include('nav') %>
+    <main>
+        <section>
+            <div class="container-fluid">
+              <div  class="row">
+                <div id="poster2">
+               <div class="col-md-7 col-sm-7 col-xs-7" >
+               <h3 id="hello3">Welcome Back !</h3>
+               <!-- <hr id="hr"> -->
+               <h6>Have a look on Corona Cases Updates</h6>
+               <h4 style="font-weight: bold;">DrBot COVID-19 Tracker</h4>
+               <div id="statsrow">
+               <div class="card border-0" id="stats">
+                <div class="card-body">
+                    <div class="total-cases2">
+                        <div id="tc" class="title">Total Cases</div>
+                        <div id="val" style="color: #0a58ca;" class="value">0</div>
+                        <hr>
+                        <div id="newVal" class="new-value" >0</div>
+                      </div>
+                </div>
+              </div>
+
+              <div class="card border-0" id="stats">
+                <div class="card-body">
+                    <div class="recovered2">
+                        <div id="tc" class="title">Recovered</div>
+                        <div id="val" style="color: green;" class="value">0</div>
+                        <hr>
+                        <div id="newVal" class="new-value">0</div>
+                      </div>
+                </div>
+              </div>
+
+              <div class="card border-0" id="stats">
+                <div class="card-body">
+                    <div class="deaths2">
+                        <div id="tc" class="title">Deaths</div>
+                        <div id="val" style="color: red;" class="value">0</div>
+                        <hr>
+                        <div id="newVal" class="new-value">0</div>
+                      </div>
+                </div>
+              </div>
+              </div>   
+               </div>
+               <div class="col-md-5 col-sm-5 col-xs-5">
+                <img id="banner2" src="../public/images/covid.jpg">
+               </div>
+             </div>
+            </div>
+          </div>
+        </section>
+      <div class="stats">
+        <div class="latest-report">
+          <div class="country">
+            <div class="name">Loading...</div>
+            <div class="change-country">change</div>
+            <div class="search-country hide">
+              <div class="search-box">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search Country..."
+                />
+                <img class="close" src="../public/images/close.svg" alt="" />
+              </div>
+              <div class="country-list"></div>
+            </div>
+          </div>
+          <div class="total-cases">
+            <div class="title">Total Cases</div>
+            <div class="value">0</div>
+            <div class="new-value">0</div>
+          </div>
+          <div class="recovered">
+            <div class="title">Recovered</div>
+            <div class="value">0</div>
+            <div class="new-value">0</div>
+          </div>
+          <div class="deaths">
+            <div class="title">Deaths</div>
+            <div class="value">0</div>
+            <div class="new-value">0</div>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas id="axes_line_chart"></canvas>
+        </div>
+      </div>
+    </main>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      language="JavaScript"
+      src="http://www.geoplugin.net/javascript.gp"
+      type="text/javascript"
+    ></script>
+    <script src="../public/javascripts/countries.js"></script>
+    <script src="../public/javascripts/covid.js"></script>
+  </body>
+</html>

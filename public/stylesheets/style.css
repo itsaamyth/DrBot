@@ -1,0 +1,125 @@
+@font-face{
+  font-family: 'Gilroy';
+  src: url(../stylesheets/Gilroy-Regular.woff) format(woff);
+}
+html,body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  
+}
+
+a {
+  color: #00B7FF;
+}
+#poster{
+  padding: 50px;
+  background-color: #c1f5ff;
+  display: flex;
+  height: 380px;
+}
+#poster2{
+  /*   background-color: #c1f5ff; */
+    padding: 50px;
+    display: flex;
+    height: 380px;
+  }
+  #poster3{
+    /*   background-color: #c1f5ff; */
+      padding: 50px;
+      display: flex;
+      /* height: 380px; */
+      box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    }
+  /* #covid{
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    height: 320px;
+    padding: 15px;
+
+  } */
+  #banner{
+    height: 400px;
+    width: 400px;
+    margin-top: -30px;
+  }
+  #banner2{
+    height: 380px;
+    width: 400px;
+    margin-top: -50px;
+    margin-left: 100px;
+  }
+  #banner3{
+    height: 320px;
+    width: 350px;
+    margin-top: -20px;
+    margin-left: 100px;
+  }
+#hello{
+  text-align: left;
+  font-size: 40px;
+  font-weight:bold
+}
+#hello2{
+  text-align: left;
+  margin-top: 50px;
+}
+#hello3{
+  text-align: left;
+  font-size: 40px;
+  font-weight:bold;
+  color: #0a2470;
+  
+}
+#hr{
+  width: 350px;
+}
+#dimg{
+  /* border-radius: 50%; */
+  height: 100px;
+  width: 100px;
+  margin-left: 25px;
+  margin-right: 10px;
+
+}
+#help{
+  background-color: #0a2470;
+  padding: 30px;
+}
+#stats{
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+#statsrow{
+  display: flex;
+}
+#val{
+  font-size: 28px;
+  font-weight:700;
+  font-family: 'Gilroy', sans-serif;
+}
+#newVal{
+  font-size:15px;
+  font-weight:900
+}
+#tc{
+  font-size: 15px;
+  color:gray;
+  margin-bottom:5px
+}
+#art{
+  height: 350px;
+  width: 280px;
+}
+#art1{
+  height: 200px;
+  width: 280px;
+}
+#art2{
+  height: 200px;
+  width: 280px;
+}
+#article{
+  padding: 50px;
+}
