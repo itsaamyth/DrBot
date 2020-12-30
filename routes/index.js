@@ -15,7 +15,7 @@ function verifyusername(req,res,next){
   checkUsername.exec((err,data)=>{
     if(err)throw(err)
     if(!data){
-      return  res.render('index', { title: 'Password Management System',msg:"Invalid Username !!",success:''}); //this will print error on html page otherthan console
+      return  res.render('index', { title: 'Password Management System',msg:"Invalid Username !!",success:'',loginUser:loginUser }); //this will print error on html page otherthan console
       }
     next()
   })
@@ -53,7 +53,7 @@ router.post('/login', verifyusername,function(req, res, next) {
     res.redirect('/')
     // res.render('index', { title: 'Password Management System',msg:"Logged in Sucessfully" });
   }else{
-    res.render('login', { title: 'DrBot | Login ',msg:"Invalid Username and Password" ,success:''});
+    res.render('login', { title: 'DrBot | Login ',msg:"Invalid Username and Password" ,success:'',loginUser:loginUser});
   }
   })
 });
