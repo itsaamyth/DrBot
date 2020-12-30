@@ -41,7 +41,17 @@
                           <form action="/login" id="EmployeeForm" method="post"  role="form" >
                             <div class="form-group">
   
-                              
+                              <% if(msg!= '') { %>
+                                <div class="alert alert-danger" role="alert">
+                                  <strong>Error !</strong> <%= msg %>
+                                </div>
+                                <% } %>
+                                <% if(success != ''){ %>
+                                  <div class="alert alert-success" role="alert">
+                                    <strong>Success!</strong> <%= success %>
+                                  </div>
+                                  <% } %>
+                                  <br><br>
                                   <div>
                                     <h6 style="margin-top: -20px;">Please Login</h6>
                                   </div>
