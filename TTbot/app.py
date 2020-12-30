@@ -50,7 +50,7 @@ def COVID_19(update,context):
 def Asthma(update,context):
     update.message.reply_text(textt.Asthma)
 def main():
-    updater = Updater("1484806252:AAGYj7hLu3UnGamwrvdM6ctfHR-gGCsJyA8", use_context=True)
+    updater = Updater("Token Dedo BHai apna", use_context=True)
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("start", start))
     dispatcher.add_handler(CommandHandler("help", help))
