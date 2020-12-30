@@ -59,7 +59,7 @@ router.post('/login', verifyusername,function(req, res, next) {
 });
 
 router.get('/register', function(req, res, next) {
-  res.render('register',{ title: 'DrBot | Register',msg:'',success:'' });
+  res.render('register',{ title: 'DrBot | Register',msg:'',success:'' ,loginUser:loginUser});
 });
 router.post('/register',function(req, res, next) {  //note:- we are using these middlewere here so that our error will not be printed in console and server will not be stopped it will be displayed in form
   var username = req.body.uname //importing userDetails from html form

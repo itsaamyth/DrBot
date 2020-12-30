@@ -37,5 +37,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+// app.listen(port, () => console.log(` app listening at http://localhost:${port}`))
 
 module.exports = app;
