@@ -26,16 +26,20 @@
           <li class="nav-item">
             <a class="nav-link" href="/diabetes">Consult</a>
           </li>
-          <!-- <li class="nav-item" id="pr">
-            <a class="nav-link" href="#">Profile</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="/profile">Profile</a>
+          </li>
         </ul>
+
         <% if(loginUser){%>
-          <li style="list-style: none;" class="nav-item">
-            <a class="navbar-brand" href="#"><img src="https://img.icons8.com/ios-filled/30/000000/user-male-circle.png"/> <%= loginUser %>
-            <a href="/logout"> <p>
-            Logout
-            </p></a> </a>
+          <li style="list-style: none;" class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img  src="https://img.icons8.com/ios-filled/30/000000/user-male-circle.png"/> <%= loginUser %>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/profile">View Profile</a></li>
+              <li><a class="dropdown-item" href="/logout">Logout</a></li>
+            </ul>
           </li>
           <form  class="d-flex">
             <button style="display: none;" class="btn btn-outline-primary" type="submit">Login/Signup</button>

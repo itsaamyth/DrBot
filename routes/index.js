@@ -7,7 +7,7 @@ if (typeof localStorage === "undefined" || localStorage === null) { //npm- local
   localStorage = new LocalStorage('./scratch');
 }
 
-var loginUser = localStorage.getItem('loginUser')
+// var loginUser = localStorage.getItem('loginUser')
 
 function verifyusername(req,res,next){
   var uname  = req.body.uname
@@ -28,13 +28,38 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/covid', function(req, res, next) {
+  var loginUser = localStorage.getItem('loginUser')
   res.render('covid', { title: 'DrBot | AI Health Assistant',loginUser:loginUser });
 });
+
+router.get('/medical', function(req, res, next) {
+  var loginUser = localStorage.getItem('loginUser')
+  res.render('medical', { title: 'DrBot | AI Health Assistant',loginUser:loginUser });
+});
+
+router.get('/profile', function(req, res, next) {
+  var loginUser = localStorage.getItem('loginUser')
+  if(loginUser){
+  var getData =  userModule.findOne({username:loginUser})
+  getData.exec((err,data)=>{
+    if (err) throw err
+    var getEmail=data.email
+    var getPhone = data.phone
+    console.log(getEmail,getPhone)
+    res.render('profile', { title: 'DrBot | AI Health Assistant',loginUser:loginUser,getEmail:getEmail,getPhone:getPhone });
+  })
+}
+else{
+  res.redirect('/login')
+}
+});
 router.get('/diabetes', function(req, res, next) {
+  var loginUser = localStorage.getItem('loginUser')
   res.render('diabetes', { title: 'DrBot | AI Health Assistant',loginUser:loginUser });
 });
 
 router.get('/login', function(req, res, next) {
+  var loginUser = localStorage.getItem('loginUser')
   res.render('login', { title: 'DrBot | Login',msg:"" ,success:'',loginUser:loginUser});
 });
 
@@ -59,6 +84,7 @@ router.post('/login', verifyusername,function(req, res, next) {
 });
 
 router.get('/register', function(req, res, next) {
+  var loginUser = localStorage.getItem('loginUser')
   res.render('register',{ title: 'DrBot | Register',msg:'',success:'' ,loginUser:loginUser});
 });
 router.post('/register',function(req, res, next) {  //note:- we are using these middlewere here so that our error will not be printed in console and server will not be stopped it will be displayed in form
@@ -69,6 +95,7 @@ router.post('/register',function(req, res, next) {  //note:- we are using these 
   var confpassword= req.body.confpassword
 
   if(password != confpassword){
+    var loginUser = localStorage.getItem('loginUser')
     res.render('register', { title: 'Password Management System',msg:"Password not matched",success:'',loginUser:loginUser});
   }
   else{
@@ -89,7 +116,7 @@ router.post('/register',function(req, res, next) {  //note:- we are using these 
 router.get('/logout', function(req, res, next) {
   localStorage.removeItem('userToken')
   localStorage.removeItem('loginUser')
-  res.redirect('/')
+  res.redirect('/login')
 });
 
 module.exports = router;

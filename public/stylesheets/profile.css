@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-SemiBold;
+    src: url('../fonts/montserrat/Montserrat-SemiBold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
+  }
+#brand{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+@media (max-width: 992px) {
+    #brand{
+        height: 80px;
+        width: 220px;
+        margin-bottom: 0;
+    }
+}
+#navmenu{
+    background-color: #0a2470;;
+
+}
+
+.navbar-nav> li> a {
+      font-size: 18px;
+      color:white;
+      margin-left: 5px;
+      font-weight: 600;
+      margin-right: 5px;
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-family: sans-serif;
+  }
+
+  #iconnav{
+      height: 40px;
+      width: 40px;
+      margin-right: 10px;
+  }
+#active{
+  background-color: white;
+  color: black;
+}
+body{
+    background: white;
+    min-height: none;
+}
+span{
+    font-size:15px;
+}
+.box{
+    padding:60px 0px;
+}
+.box-part{
+    background:white;
+    border-radius:5px;
+    padding:20px 5px;
+    font-weight: 600;
+    margin:30px 0px;
+}
+#av{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+@media (max-width: 768px) {
+    .box-part{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.10);
+    }
+}
+.box-part:hover{
+    transition:  all 0.3s ease-in-out;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.10);
+
+}
+.text{
+    margin:20px 0px;
+}
+
+.fa{
+     color:#4183D7;
+}
+#dash-icon{
+    height: 100px;
+    width: 100px;
+}
+#icon{
+    color: #123c69;
+    margin-top: -10px;
+}
+#userDash{
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: 600;
+}
